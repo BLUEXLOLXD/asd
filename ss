@@ -37,27 +37,27 @@ local Data = {
          ["fields"] = {
             {                  
                ["name"] = "MID",
-               ["value"] = string.format("%.2f%%", midhealthPercentage),
+               ["value"] = string.format("```%.2f%%```", midhealthPercentage),
                ["inline"] = true
             },           
             {                  
                ["name"] = "FL",
-               ["value"] = string.format("%.2f%%", flhealthPercentage),
+               ["value"] = string.format("```%.2f%%```", flhealthPercentage),
                ["inline"] = true
             },
             {                  
                ["name"] = "BL",
-               ["value"] = string.format("%.2f%%", blhealthPercentage),
+               ["value"] = string.format("```%.2f%%```", blhealthPercentage),
                ["inline"] = true
             },
             {                  
                ["name"] = "FR",
-               ["value"] = string.format("%.2f%%", frhealthPercentage),
+               ["value"] = string.format("```%.2f%%```", frhealthPercentage),
                ["inline"] = true
             },
             {                  
                ["name"] = "BR",
-               ["value"] = string.format("%.2f%%", brhealthPercentage),
+               ["value"] = string.format("```%.2f%%```", brhealthPercentage),
                ["inline"] = true
             },           
             {                  
