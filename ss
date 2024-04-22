@@ -30,7 +30,7 @@ local Data = {
          ["fields"] = {
             {                  
                ["name"] = "MID",
-               ["value"] = "```"..midhumanoid and midhumanoid.Health.."```",
+               ["value"] = midhumanoid and midhumanoid.Health,
                ["inline"] = true
             },           
             {                  
