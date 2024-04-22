@@ -15,6 +15,13 @@ local flhumanoid = game.Workspace.NPCSpawns.GyakusatsuSpawn.FL:FindFirstChild("H
 local blhumanoid = game.Workspace.NPCSpawns.GyakusatsuSpawn.BL:FindFirstChild("Humanoid")
 local frhumanoid = game.Workspace.NPCSpawns.GyakusatsuSpawn.FR:FindFirstChild("Humanoid")
 local brhumanoid = game.Workspace.NPCSpawns.GyakusatsuSpawn.BR:FindFirstChild("Humanoid")
+local maxValue = 80400
+
+local midhealthPercentage = (midhumanoid and midhumanoid.Health or 0) / maxValue * 100
+local flhealthPercentage = (flhumanoid and flhumanoid.Health or 0) / maxValue * 100
+local blhealthPercentage = (blhumanoid and blhumanoid.Health or 0) / maxValue * 100
+local frhealthPercentage = (frhumanoid and frhumanoid.Health or 0) / maxValue * 100
+local brhealthPercentage = (brhumanoid and brhumanoid.Health or 0) / maxValue * 100
 
 local midhealth, flhealth, blhealth, frhealth, brhealth = midhumanoid and midhumanoid.Health, flhumanoid and flhumanoid.Health, blhumanoid and blhumanoid.Health, frhumanoid and frhumanoid.Health, brhumanoid and brhumanoid.Health
 
@@ -30,27 +37,27 @@ local Data = {
          ["fields"] = {
             {                  
                ["name"] = "MID",
-               ["value"] = string.format("%.0f%%", (midhumanoid and midhumanoid.Health or 0) * 100),
+               ["value"] = string.format("%.2f%%", midhealthPercentage),
                ["inline"] = true
-            },
+            },           
             {                  
                ["name"] = "FL",
-               ["value"] = string.format("%.0f%%", (flhumanoid and flhumanoid.Health or 0) * 100),
+               ["value"] = string.format("%.2f%%", flhealthPercentage),
                ["inline"] = true
             },
             {                  
                ["name"] = "BL",
-               ["value"] = string.format("%.0f%%", (blhumanoid and blhumanoid.Health or 0) * 100),
+               ["value"] = string.format("%.2f%%", blhealthPercentage),
                ["inline"] = true
             },
             {                  
                ["name"] = "FR",
-               ["value"] = string.format("%.0f%%", (frhumanoid and frhumanoid.Health or 0) * 100),
+               ["value"] = string.format("%.2f%%", frhealthPercentage),
                ["inline"] = true
             },
             {                  
                ["name"] = "BR",
-               ["value"] = string.format("%.0f%%", (brhumanoid and brhumanoid.Health or 0) * 100),
+               ["value"] = string.format("%.2f%%", brhealthPercentage),
                ["inline"] = true
             },           
             {                  
