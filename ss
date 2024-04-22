@@ -30,27 +30,27 @@ local Data = {
          ["fields"] = {
             {                  
                ["name"] = "MID",
-               ["value"] = string.format("%.2f%%", (midhumanoid and midhumanoid.Health or 0) * 100),
+               ["value"] = string.format("100%%"), (midhumanoid and midhumanoid.Health or 0) * 100),
                ["inline"] = true
             },
             {                  
                ["name"] = "FL",
-               ["value"] = string.format("%.2f%%", (flhumanoid and flhumanoid.Health or 0) * 100),
+               ["value"] = string.format("100%%"), (flhumanoid and flhumanoid.Health or 0) * 100),
                ["inline"] = true
             },
             {                  
                ["name"] = "BL",
-               ["value"] = string.format("%.2f%%", (blhumanoid and blhumanoid.Health or 0) * 100),
+               ["value"] = string.format("100%%"), (blhumanoid and blhumanoid.Health or 0) * 100),
                ["inline"] = true
             },
             {                  
                ["name"] = "FR",
-               ["value"] = string.format("%.2f%%", (frhumanoid and frhumanoid.Health or 0) * 100),
+               ["value"] = string.format("100%%"), (frhumanoid and frhumanoid.Health or 0) * 100),
                ["inline"] = true
             },
             {                  
                ["name"] = "BR",
-               ["value"] = string.format("%.2f%%", (brhumanoid and brhumanoid.Health or 0) * 100),
+               ["value"] = string.format("100%%"), (brhumanoid and brhumanoid.Health or 0) * 100),
                ["inline"] = true
             },           
             {                  
