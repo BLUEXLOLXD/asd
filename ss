@@ -30,7 +30,7 @@ local Data = {
          ["fields"] = {
             {                  
                ["name"] = "MID",
-               ["value"] = midhumanoid and midhumanoid.Health,
+               ["value"] = string.format("```%s```", midhumanoid and midhumanoid.Health or "Not Found"),
                ["inline"] = true
             },           
             {                  
